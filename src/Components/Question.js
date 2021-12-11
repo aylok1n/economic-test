@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.css';
-import { FormControl, FormLabel, Radio, RadioGroup, FormControlLabel } from '@mui/material'
+import { FormControl, Radio, RadioGroup, FormControlLabel } from '@mui/material'
 import { blue, } from '@mui/material/colors';
 
 export const Question = ({ question, answer, options, onCheck }) => {
@@ -13,7 +13,6 @@ export const Question = ({ question, answer, options, onCheck }) => {
                     name="radio-buttons-group"
                 >
                     {options.map((i, index) => (
-                        // <p key={index} ><input name="ans" value={index} type='radio' onChange={(e) => handleCheck(e, index)} />{i}</p>
                         <FormControlLabel
                             key={index}
                             value={index}
