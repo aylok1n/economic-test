@@ -12,6 +12,7 @@ function App() {
                 <Tabs variant="scrollable" scrollButtons="auto" value={location.pathname}>
                     <Tab label='Основные фонды предприятия' component={Link} to={`/economic-test/Task1`} value={`/economic-test/Task1`} />
                     <Tab label='Производственная мощность предприятия' component={Link} to={`/economic-test/Task2`} value={`/economic-test/Task2`} />
+                    <Tab label='Инвестиции и инвестиционная деятельность предприятия' component={Link} to={`/economic-test/Task3`} value={`/economic-test/Task3`} />
                 </Tabs>
             </div>
             <Container maxWidth="sm">
@@ -19,6 +20,7 @@ function App() {
                     <Routes>
                         <Route index path={`/economic-test/Task1`} element={<Task1 data={require('./data/task1.json')} />} />
                         <Route path={`/economic-test/Task2`} element={<Task1 data={require('./data/task2.json')} />} />
+                        <Route path={`/economic-test/Task3`} element={<Task1 data={require('./data/task3.json')} />} />
                     </Routes>
                 </div>
             </Container>
