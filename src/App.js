@@ -1,21 +1,26 @@
-import './App.css';
-import {
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
-import Task1 from './Tasks/Task1';
+import { Container, Tab, Tabs } from '@mui/material'
+import React from 'react';
+import { Link, Route, Routes, useLocation } from 'react-router-dom';
+import Task1 from './Tasks/Task1'
 
 function App() {
+  const location = useLocation();
+
   return (
-    <div className="App">
-      <nav>
-        <Link style={{ marginRight: 20 }} to='Task1' >Основные фонды предприятия</Link>
-      </nav>
-      <Routes>
-        <Route path="/Task1" element={<Task1 />} />
-      </Routes>
-    </div>
+    <Container maxWidth="sm">
+      <Tabs variant="scrollable" scrollButtons="auto" value={location.pathname}>
+        <Tab label='Основные фонды предприятия' component={Link} to={`/Task1`} value={`/Task1`} />
+        <Tab label='Еще тест' component={Link} to={`/Task2`} value={`/Task2`} />
+      </Tabs>
+      <div >
+        <Routes>
+          <Route path={`/Task1`} element={<Task1 />} />
+          <Route path={`/Task2`}>
+            {/* <UserEventsDataTable /> */}
+          </Route>
+        </Routes>
+      </div>
+    </Container>
   );
 }
 

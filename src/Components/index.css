@@ -1,0 +1,6 @@
+.question {
+    background-color:  '#ffffff10';
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    margin: 0px 30px
+}

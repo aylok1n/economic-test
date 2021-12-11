@@ -1,53 +1,29 @@
 import React from 'react'
 import Question from '../Components/Question'
+import { Container } from '@mui/material'
 
-const data = [
-    {
-        question: 'Совокупность средств труда, функционирующих в неизменной натуральной форме в течение длительного периода времени и переносящих свою стоимость на готовый продукт частями, по мере износа:',
-        answer: 0,
-        options: ['основные средства;', 'оборотные средства;', 'фонды обращения;', 'производственные запасы']
-    },
-    {
-        question: 'К активной части основных средств относятся:',
-        answer: 1,
-        options: ['здания', 'сооружения', 'транспортные средства;', 'передаточные устройства.']
-    },
-    {
-        question: 'Стоимость воспроизводства основных фондов в современных условиях:',
-        answer: 1,
-        options: ['первоначальная', 'восстановительная', 'остаточная', 'балансовая']
-    },
-    {
-        question: 'Обратная величина фондоотдачи',
-        answer: 1,
-        options: ['фондорентабельность', 'фондоемкость', 'фондовооруженность', 'фондообеспеченность']
-    },
-    {
-        question: 'Оборотные средства предприятия включают в себя:',
-        answer: 0,
-        options: ['оборотные производственные фонды и фонды обращения;', 'готовую продукцию и средства в расчетах;', 'основные производственные фонды', 'непроизводственные фонды.']
-    },
-    {
-        question: 'Денежное выражение затрат предприятия на производство и реализацию продукции:',
-        answer: 0,
-        options: ['себестоимость', 'цена', 'стоимость',]
-    },
-]
+const data = require('../data/task1.json')
 
 export const Task1 = (props) => {
     const [show, setShow] = React.useState(1)
+    const [answers, setAnswers] = React.useState({})
 
-    const onCheck = () => {
-
+    const onCheck = (index, value) => {
+        if (show < index + 2) setShow(index + 2)
+        const answ = { ...answers }
+        answ[index] = value
+        setAnswers(answ)
     }
 
     return (
-        <div>
-            {
-                data.slice(0, show).map((i, index) => (
-                    <Question key={index} {...i} onCheck={() => setShow(show + 1)} />
-                ))
-            }
+        <div style={{ marginTop: 20 }}>
+            <Container maxWidth="sm">
+                {
+                    data.slice(0, show).map((i, index) => (
+                        <Question key={index} {...i} onCheck={(val) => onCheck(index, val)} />
+                    ))
+                }
+            </Container>
         </div>
     )
 
