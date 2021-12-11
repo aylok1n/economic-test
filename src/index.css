@@ -1,15 +1,54 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-image: url(assets/background.jpg);
-  background-size: cover;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url(assets/background.jpg);
+    background-size: 100% cover;
+    overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 25px;
+}
+
+/* button */
+::-webkit-scrollbar-button {
+    background: #FFF; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(70, 168, 233, 0.959); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 183, 255); 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #FFF; 
+}
+
+/* The track NOT covered by the handle.
+::-webkit-scrollbar-track-piece {
+    background: #000; 
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+    background: rgb(255, 255, 255); 
+}
+
+/* Resizer */
+::-webkit-resizer {
+    background: rgb(255, 255, 255); 
 }
