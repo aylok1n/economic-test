@@ -3,9 +3,7 @@ import Question from '../Components/Question'
 import { Container, Button } from '@mui/material'
 import './index.css';
 
-const data = require('../data/task1.json')
-
-export const Task1 = (props) => {
+export const Task1 = ({ data }) => {
     const [show, setShow] = React.useState(1)
     const [answers, setAnswers] = React.useState({})
     const [result, setResult] = React.useState(false)
