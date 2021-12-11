@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/economic-test/static/css/main.643b2efd.chunk.css",
-    "main.js": "/economic-test/static/js/main.4e1fe97f.chunk.js",
-    "main.js.map": "/economic-test/static/js/main.4e1fe97f.chunk.js.map",
-    "runtime-main.js": "/economic-test/static/js/runtime-main.4a05b9d1.js",
-    "runtime-main.js.map": "/economic-test/static/js/runtime-main.4a05b9d1.js.map",
-    "static/js/2.379999cc.chunk.js": "/economic-test/static/js/2.379999cc.chunk.js",
-    "static/js/2.379999cc.chunk.js.map": "/economic-test/static/js/2.379999cc.chunk.js.map",
-    "static/js/3.9c2b9027.chunk.js": "/economic-test/static/js/3.9c2b9027.chunk.js",
-    "static/js/3.9c2b9027.chunk.js.map": "/economic-test/static/js/3.9c2b9027.chunk.js.map",
+    "main.css": "/economic-test/static/css/main.0a311857.chunk.css",
+    "main.js": "/economic-test/static/js/main.28204b0b.chunk.js",
+    "main.js.map": "/economic-test/static/js/main.28204b0b.chunk.js.map",
+    "runtime-main.js": "/economic-test/static/js/runtime-main.e20736d5.js",
+    "runtime-main.js.map": "/economic-test/static/js/runtime-main.e20736d5.js.map",
+    "static/js/2.bd4d0e98.chunk.js": "/economic-test/static/js/2.bd4d0e98.chunk.js",
+    "static/js/2.bd4d0e98.chunk.js.map": "/economic-test/static/js/2.bd4d0e98.chunk.js.map",
+    "static/js/3.4a13c446.chunk.js": "/economic-test/static/js/3.4a13c446.chunk.js",
+    "static/js/3.4a13c446.chunk.js.map": "/economic-test/static/js/3.4a13c446.chunk.js.map",
     "index.html": "/economic-test/index.html",
-    "static/css/main.643b2efd.chunk.css.map": "/economic-test/static/css/main.643b2efd.chunk.css.map",
-    "static/js/2.379999cc.chunk.js.LICENSE.txt": "/economic-test/static/js/2.379999cc.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/economic-test/static/media/background.44af1a75.jpg"
+    "static/css/main.0a311857.chunk.css.map": "/economic-test/static/css/main.0a311857.chunk.css.map",
+    "static/js/2.bd4d0e98.chunk.js.LICENSE.txt": "/economic-test/static/js/2.bd4d0e98.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/economic-test/static/media/background.3daf5f5c.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4a05b9d1.js",
-    "static/js/2.379999cc.chunk.js",
-    "static/css/main.643b2efd.chunk.css",
-    "static/js/main.4e1fe97f.chunk.js"
+    "static/js/runtime-main.e20736d5.js",
+    "static/js/2.bd4d0e98.chunk.js",
+    "static/css/main.0a311857.chunk.css",
+    "static/js/main.28204b0b.chunk.js"
   ]
 }
