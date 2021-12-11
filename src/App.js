@@ -27,10 +27,11 @@ function App() {
             <Container maxWidth="sm">
                 <div>
                     <Routes>
-                        <Route path={`/Task1`} element={<Task1 />} />
+                        <Route index path={`/Task1`} element={<Task1 />} />
                         <Route path={`/Task2`}>
                             {/* <UserEventsDataTable /> */}
                         </Route>
+                        
                     </Routes>
                 </div>
             </Container>
